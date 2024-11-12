@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paraíso dos Lanches</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./Logo/logo_sem_fundo.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"> <!-- Adicione o link para voltar ao início -->
+                <img src="./Logo/logo.png" alt="Logo da Lanchonete">
+            </a>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="cardapio.html">Faça seu pedido pelo site!</a></li>
+                <li><a href="menu.html">Confira nossos produtos</a></li>
+                <li><a href="#cadastro" class="btn-cadastro">Cadastre-se</a></li>
+                <li><a href="#contato" class="btn-contato">Contato</a></li>
+                <li> <a href="#login-div" class="btn-logon">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Bem-vindo ao Paraíso dos Lanches!</h1>
+        <p>Sua satisfação é nosso maior prazer. Aproveite os melhores lanches da cidade!</p>
+        <a href="cardapio.html" class="btn">Confira o nosso Cardápio</a>
+    </section>
+
+    <section id="topo" class="menu-section">
+        <!-- Carrossel de imagens -->
+        <section class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="./Imagens/lanche_1.jpeg" alt="Imagem 1">
+                    <img src="./Imagens/lanche_2.jpeg" alt="Imagem 2">
+                    <img src="./Imagens/lanche_3.jpeg" alt="Imagem 3">
+                    <img src="./Imagens/lanche_4.jpeg" alt="Imagem 4">
+                    <img src="./Imagens/lanche_5.jpeg" alt="Imagem 5">
+                    <img src="./Imagens/lanche_6.jpeg" alt="Imagem 6">
+                    <img src="./Imagens/lanche_7.jpeg" alt="Imagem 7">
+                    <img src="./Imagens/lanche_8.jpeg" alt="Imagem 8">
+                    <img src="./Imagens/lanche_9.jpeg" alt="Imagem 9">
+                    <img src="./Imagens/lanche_10.jpeg" alt="Imagem 10">
+                    <img src="./Imagens/lanche_11.jpeg" alt="Imagem 11">
+                    <img src="./Imagens/lanche_12.jpeg" alt="Imagem 12">
+                    <img src="./Imagens/lanche_13.jpeg" alt="Imagem 13">
+                    <img src="./Imagens/lanche_14.jpeg" alt="Imagem 14">
+                    <img src="./Imagens/lanche_15.jpeg" alt="Imagem 15">
+                </div>
+            </div>
+        </section>
+
+<div class="login-div" id="login-div">
+    <section id="cadastro" class="cadastro-section">
+        <h2>Login de Cliente</h2>
+    <form id="cadastro-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br>
+
+        <button type="submit">Entrar</button>
+    </form>
+</div>
+
+    </section>
+    <section id="cadastro" class="cadastro-section">
+        <h2>Cadastro de Clientes</h2>
+        <form id="cadastro-form" method="post" action="javascript:void(0);">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10,11}" required> <!-- Aceita apenas números de 10 a 11 dígitos -->
+
+            <!-- Campo de Rua -->
+            <label for="rua">Rua:</label>
+            <input type="text" id="rua" name="rua" required>
+
+            <!-- Campo de Bairro -->
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required>
+
+            <!-- Campo de Estado (Seleção) -->
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+                <option value="">Selecione o estado</option>
+                <option value="RJ">Rio de Janeiro</option>
+             <!-- Adicione mais estados conforme necessário -->
+        </select>
+
+        <!-- Campo de Cidade (Filtrado pelo Estado) -->
+        <label for="cidade">Cidade:</label>
+        <select id="cidade" name="cidade" required>
+            <option value="">Selecione a cidade</option>
+        </select>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <!-- Campo para Confirmar Senha -->
+            <label for="confirma-senha">Confirme sua Senha:</label>
+            <input type="password" id="confirma-senha" name="confirma-senha" required>
+            
+            <button type="submit" class="btn">Cadastre-se</button>
+        </form>
+
+        <!-- Notificação de Sucesso -->
+    <div id="notificacao" class="notificacao">Mensagem de sucesso</div> <!-- Notificação oculta inicialmente -->
+    
+    </section>
+
+    <section id="contato" class="contato-section">
+        <h2>Faça seu pedido pelo Whatsapp!!</h2>
+        <p>Mais rápido, mais facíl</p>
+        <a href="https://wa.me/+5522981442901" target="_blank" class="btn btn-whatsapp">Faça já seu pedido</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Daniel Aleixo. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

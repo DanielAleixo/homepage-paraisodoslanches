@@ -1,0 +1,588 @@
+/* Adicione esta importação no início do seu CSS para incluir a fonte Spicy Rice */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bungee Spice", sans-serif;
+    background-color: #838282; /* Fundo preto */
+    color: #fff; /* Fontes brancas */
+}
+
+header {
+    background-color: #555; /* Cinza escuro */
+    color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 0.1rem; /* Ajuste o valor conforme necessário */
+}
+
+header {
+    background-image: url('./Logo/logo_sem_fundo.png'); /* Caminho para sua imagem */
+    background-repeat: repeat; /* Repete a imagem */
+    background-size: 100px 100px; /* Define o tamanho da imagem (ajuste conforme necessário) */
+    background-position: top left; /* Define a posição inicial da imagem */
+    background-attachment: fixed; /* Mantém o fundo fixo enquanto rola a página */
+    width: 100%;
+    height: 200px; /* Altura do header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+
+.logo img {
+    max-width: 150px;
+}
+
+nav {
+    flex-grow: 1; /* Faz o nav ocupar o espaço disponível */
+    display: flex; /* Exibe o nav como um flex container */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Exibe os itens da lista em linha */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+    gap: 1rem; /* Espaçamento uniforme entre os itens */
+}
+
+nav ul li {
+    margin: 0 2rem; /* Espaçamento uniforme entre os itens */
+}
+
+nav ul li a {
+    display: inline-block; /* Faz com que o link se comporte como bloco para aplicar estilos */
+    padding: 10px; /* Adiciona espaçamento interno */
+    border: 2px solid rgb(255, 123, 0); /* Borda amarela */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+
+nav ul li a {
+    color: #ffffff; /* Fontes brancas */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px; /* Adiciona espaçamento dentro da caixa */
+    border: 2px solid rgb(255, 123, 0); /* Borda amarela */
+    border-radius: 20px; /* Bordas arredondadas */
+    background-color: #333; /* Fundo cinza escuro */
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições para hover */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Alteração da cor ao passar o mouse */
+    transform: scale(1.05); /* Aumenta um pouco a caixa ao passar o mouse */
+}
+
+
+/* Estilização da seção .hero */
+.hero {
+    margin-top: -90px; /* Ajuste o valor conforme necessário */
+}
+
+.hero {
+    height: 30vh; /* Altura total da tela */
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center;
+    background-image: url('./Logo/logo_sem_fundo_fosco.png'); /* Adicione o caminho correto da sua imagem */
+    background-size: contain; /* Redimensiona a imagem para que ela fique visível completamente */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-color: #ffffff; /* Preenche o restante da tela com uma cor de fundo (preto no caso) */
+    color: #000000;
+    padding: 40px 20px; /* Adiciona espaçamento ao redor do conteúdo */
+}
+
+.hero h1 {
+    font-family: "Bungee Spice", sans-serif;
+    margin-top: 20px; /* Espaçamento do topo */
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 60px; /* Ajuste o tamanho da fonte conforme necessário */
+    text-shadow: 2px 9px 12px #000000; /* Sombra para o texto */
+}
+
+.hero p {
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 40px; /* Tamanho da fonte do parágrafo (um pouco menor que o h1) */
+    margin-top: 10px; /* Espaçamento acima do parágrafo */
+    text-shadow: 2px 9px 12px #000000; /* Sombra para o parágrafo, um pouco menos intensa que a do h1 */
+}
+
+.hero .btn {
+    margin-top: 2rem;
+    margin-bottom: 2rem; /* Adiciona espaçamento abaixo do botão */
+    padding: 10px 80px; /* Adiciona espaçamento dentro da caixa */
+    background-color: #333; /* Fundo cinza escuro */
+    color: #ffffff; /* Texto branco */
+    border: 2px solid rgb(255, 123, 0); /* Borda amarela */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+    text-shadow: 1px 1px 1px #000000;
+    font-size: 30px;
+}
+
+.hero .btn:hover {
+    background-color: #555; /* Cor de fundo alterada ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o botão ao passar o mouse */
+}
+
+
+.menu-section {
+    padding: 2rem;
+    background-color: #555; /* Preto mais suave */
+    text-align: center;
+    background-image: url('./Logo/logo_sem_fundo.png'); /* Caminho para sua imagem */
+    background-repeat: repeat; /* Repete a imagem */
+    background-size: 100px 100px; /* Tamanho da imagem ajustado */
+    background-position: top left; /* Define a posição inicial da imagem */
+    background-attachment: fixed; /* Mantém o fundo fixo */
+}
+
+.menu-items {
+    display: flex; /* Alinha os itens em linha */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte quando necessário */
+    justify-content: space-between; /* Distribui o espaço igualmente entre os itens */
+    margin: 20px 0; /* Adiciona uma margem superior e inferior */
+}
+
+.item {
+    flex: 0 1 calc(30% - 20px); /* Faz com que cada item ocupe aproximadamente 30% da largura da linha, menos 20px para espaçamento */
+    box-sizing: border-box; /* Inclui a borda e o padding no cálculo da largura total */
+    margin: 10px; /* Espaçamento entre os itens */
+    text-align: center; /* Centraliza o texto dentro do item */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente para os itens */
+    padding: 15px; /* Padding interno para os itens */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: transform 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.item:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o item ao passar o mouse */
+}
+
+.item img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do item */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas para as imagens */
+}
+
+.small-img {
+    max-width: 80%; /* Diminui o tamanho das imagens específicas (Seafood Delight e Trio de Queijos) */
+}
+
+
+.cadastro-section {
+    padding: 2rem;
+    background-color: #222; /* Fundo cinza escuro */
+    text-align: center;
+}
+
+.cadastro-section form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.cadastro-section label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #fff; /* Fontes brancas */
+}
+
+/* Estilização dos campos select para Estado e Cidade */
+select#estado,
+select#cidade {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #555; /* Borda cinza */
+    border-radius: 5px;
+    background-color: #333; /* Fundo cinza escuro */
+    color: #fff; /* Texto branco */
+    font-family: "Bungee Spice", sans-serif; /* Fonte conforme o padrão */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.cadastro-section input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #555; /* Borda cinza */
+    border-radius: 5px;
+    background-color: #333; /* Fundo cinza escuro nos inputs */
+    color: #fff; /* Texto branco nos inputs */
+}
+
+.cadastro-section button {
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    background-color: #777; /* Botão cinza */
+    color: #000; /* Texto preto */
+    border: 2px solid rgb(255, 123, 0);
+    cursor: pointer;
+}
+
+.contato-section {
+    padding: 2rem;
+    background-color: #333; /* Cinza escuro */
+    color: white;
+    text-align: center;
+}
+
+.contato-section .btn-whatsapp {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #111; /* Preto mais suave */
+    color: white;
+    text-align: center;
+    padding: 0.9rem;
+    font-size: 1rem;
+}
+/* Estilos do carrossel */
+
+/* Ajuste do carrossel para ficar um pouco mais abaixo */
+
+.carousel {
+    width: 100%;
+    height: 250px; /* Ajuste a altura se necessário */
+    overflow: hidden;
+    margin: 4rem 0;
+    position: relative;
+    background-color: #000000;
+    background-repeat: repeat; /* Repete a imagem */
+    background-size: 100px 100px; /* Tamanho da imagem ajustado */
+    background-position: top left; /* Define a posição inicial da imagem */
+    background-attachment: fixed; /* Mantém o fundo fixo */
+}
+
+.carousel-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%; /* Largura do carrossel ajustada */
+    height: 100%;
+    transition: transform 0.5s ease-in-out; /* Suaviza a transição */
+    white-space: nowrap; /* Impede que as imagens quebrem para a linha seguinte */
+}
+
+.carousel-slide img {
+    width: 250px; /* Largura fixa para todas as imagens */
+    height: 250px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Garante que as imagens sejam redimensionadas sem distorção, preenchendo a área de 854x854 */
+    flex-shrink: 0; /* Impede que a imagem encolha dentro do carrossel */
+    border-radius: 20px; /* (Opcional) Bordas arredondadas, remova se não for necessário */
+    margin: 0 50px; /* Adiciona espaçamento horizontal entre as imagens */
+}
+
+html {
+    scroll-behavior: smooth; /* Faz a rolagem suave para as âncoras */
+}
+
+.logo a {
+    display: inline-block; /* Faz com que o link se comporte como bloco para aplicar estilos */
+    padding: 10px; /* Adiciona espaçamento interno */
+    border: 2px solid rgb(255, 123, 0); /* Borda amarela */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+.logo a:hover {
+    background-color: #555; /* Alteração da cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o tamanho ao passar o mouse */
+}
+
+.logo img {
+    max-width: 150px; /* Tamanho máximo do logo */
+    border-radius: 20px; /* Também aplica bordas arredondadas à imagem */
+}
+
+/* Estilização do botão "Cadastrar" na seção de cadastro */
+.cadastro-section button {
+    padding: 10px 20px;
+    background-color: #333; /* Mesma cor de fundo dos botões do header */
+    color: #ffffff; /* Texto branco */
+    border: 2px solid rgb(255, 123, 0), 123, 0; /* Borda amarela */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    text-transform: uppercase; /* Deixa o texto em caixa alta */
+    font-weight: bold; /* Texto negrito */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Suaviza as transições */
+    text-shadow: 1px 1px 1px #000000; /* Adiciona sombra ao texto */
+    font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-top: 1rem; /* Margem superior */
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 30px;
+}
+
+/* Efeito hover para o botão "Cadastrar" */
+.cadastro-section button:hover {
+    background-color: #555; /* Mesma cor de fundo ao passar o mouse, como nos botões do header */
+    transform: scale(1.05); /* Aumenta o botão levemente ao passar o mouse */
+}
+
+/* Estilização do botão WhatsApp */
+.contato-section .btn-whatsapp {
+    padding: 10px 20px;
+    background-color: #25D366; /* Mantém a cor verde do WhatsApp */
+    color: white; /* Texto branco */
+    border: 2px solid rgb(255, 123, 0); /* Borda amarela */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    text-transform: uppercase; /* Texto em caixa alta */
+    font-weight: bold; /* Texto negrito */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Suaviza as transições */
+    text-shadow: 1px 1px 1px #000000; /* Adiciona sombra ao texto */
+    font-size: 20px; /* Ajuste do tamanho da fonte */
+    margin-top: 1rem; /* Margem superior */
+}
+
+/* Efeito hover para o botão WhatsApp */
+.contato-section .btn-whatsapp:hover {
+    background-color: #1EBE5E; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o botão levemente ao passar o mouse */
+}
+
+.notificacao {
+    display: none; /* Oculta a notificação inicialmente */
+    background-color: #555; /* Cor verde para sucesso */
+    color: white; /* Texto branco */
+    padding: 15px; /* Aumenta o padding */
+    margin-top: 15px; /* Espaço acima da notificação */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+    font-size: 30px; /* Aumenta o tamanho da fonte */
+    position: relative; /* Para poder usar animações */
+}
+
+.notificacao.mostrar {
+    display: block; /* Exibe a notificação quando a classe mostrar é adicionada */
+    animation: fadeIn 1.5s, fadeOut 1.5s 2.5s; /* Animação de fade in e fade out */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero .btn {
+        font-size: 1.2rem;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        max-width: 100%;
+    }
+
+    .cadastro-section button {
+        font-size: 1rem;
+    }
+}
+
+/* Estilos Responsivos para Header e Botões */
+@media (max-width: 768px) {
+    /* Centraliza o conteúdo do header em dispositivos menores */
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto; /* Ajusta a altura para conteúdo dinâmico */
+        padding: 1rem; /* Espaço adicional para centralizar */
+    }
+
+    /* Ajuste dos botões e itens do menu para empilhamento vertical */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; /* Espaço entre os itens do menu */
+    }
+
+    nav ul li {
+        margin: 0; /* Remove o espaçamento horizontal para evitar sobreposição */
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+        width: 100%; /* Largura maior para facilitar o toque */
+        text-align: center; /* Centraliza o texto dos botões */
+        font-size: 1rem; /* Tamanho de fonte ajustado */
+    }
+
+    /* Ajuste do botão Cadastro na seção cadastro */
+    .cadastro-section button {
+        width: 100%; /* Botão ocupa toda a largura disponível */
+        padding: 15px 0; /* Aumenta a altura para toque em dispositivos móveis */
+        font-size: 1rem; /* Ajusta o tamanho do texto */
+    }
+
+    /* Botão de WhatsApp na seção de contato */
+    .contato-section .btn-whatsapp {
+        width: 80%; /* Largura maior para facilitar o toque */
+        padding: 15px 0;
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+        margin-top: 1rem;
+    }
+
+    /* Ajustes na hero section e botão */
+    .hero h1 {
+        font-size: 2rem; /* Ajuste de tamanho para título */
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .hero .btn {
+        font-size: 1rem;
+        width: 80%;
+        padding: 15px 0;
+    }
+}
+/* Hero Section */
+
+/* Título e Texto */
+.hero h1 {
+    font-size: 3rem; /* Tamanho do título */
+    margin: 0; /* Remove margens */
+}
+
+.hero p {
+    font-size: 1.5rem; /* Tamanho do parágrafo */
+    max-width: 600px; /* Largura máxima do texto */
+}
+
+/* Botão */
+.hero .cta-button {
+    background: #ffcc00; /* Cor de fundo do botão */
+    color: #333; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Padding do botão */
+    font-size: 1.2rem; /* Tamanho da fonte do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor em forma de mão */
+    transition: background 0.3s; /* Efeito de transição */
+}
+
+.hero .cta-button:hover {
+    background: #e6b800; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .hero {
+        height: 70vh; /* Altura reduzida em telas menores */
+        padding: 15px; /* Reduz o padding */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Tamanho do título menor */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Tamanho do parágrafo menor */
+    }
+
+    .hero .cta-button {
+        font-size: 1rem; /* Tamanho do botão menor */
+        padding: 8px 16px; /* Ajuste do padding do botão */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 60vh; /* Altura ainda menor em telas muito pequenas */
+    }
+
+    .hero h1 {
+        margin-top: 100px;
+        font-size: 2rem; /* Tamanho do título ainda menor */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Tamanho do parágrafo ainda menor */
+    }
+
+    .hero .cta-button {
+        font-size: 0.9rem; /* Tamanho do botão ainda menor */
+        padding: 8px 12px; /* Ajuste do padding do botão */
+    }
+}
+
+.login-div{
+    padding: 2rem;
+    background-color: #333; /* Cinza escuro */
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+
+}
